@@ -1,0 +1,25 @@
+.userSuccMSG {
+    background: url(../images/userSuccMSGOverbg.png) repeat;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    position: fixed;
+    left: 40%;
+    top: 62px;
+    width: auto;
+    min-width: 418px;
+    line-height: 38px;
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'droid_sansregular';
+    z-index: 1000000;
+    display: none;
+    padding: 20px 40px;
+}
+
+.errorMsg {
+    color: red;
+    font-size: 16px;
+    margin-left: 75px;
+}
