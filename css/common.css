@@ -1,5 +1,5 @@
-.userSuccMSG {
-    background: url(../images/userSuccMSGOverbg.png) repeat;
+.message {
+    background: url(../images/message.png) repeat;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;

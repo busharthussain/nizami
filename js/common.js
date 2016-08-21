@@ -184,33 +184,33 @@ function loadMessages() {
 }
 
 function toggleMsg(msg) {
-    if ($('.userSuccMSG').is(':hidden')) {
-        $('.userSuccMSG').html(msg);
-        $('.userSuccMSG').css('display', 'block');
-        $('.userSuccMSG').css("top", 320 + "px");
-        $('.userSuccMSG').css("left", (($(window).width() / 2 - $('.userSuccMSG').width() / 2) - 38) + "px");
+    if ($('.message').is(':hidden')) {
+        $('.message').html(msg);
+        $('.message').css('display', 'block');
+        $('.message').css("top", 320 + "px");
+        $('.message').css("left", (($(window).width() / 2 - $('.message').width() / 2) - 38) + "px");
     } else {
-        $('.userSuccMSG').hide();
+        $('.message').hide();
     }
     ;
 }
 
 function showMsg(msg) {
-    $('.userSuccMSG').html(msg);
-    $('.userSuccMSG').css('display', 'block');
-    $('.userSuccMSG').css("top", 62 + "px");
-    $('.userSuccMSG').css("left", (($(window).width() / 2 - $('.userSuccMSG').width() / 2) - 38) + "px");
+    $('.message').html(msg);
+    $('.message').css('display', 'block');
+    $('.message').css("top", 62 + "px");
+    $('.message').css("left", (($(window).width() / 2 - $('.message').width() / 2) - 38) + "px");
 
-    $('.userSuccMSG').fadeOut(4000);
+    $('.message').fadeOut(4000);
 
 }
 function showMsgDelay (msg) {
 
-    $('.userSuccMSG').html(msg);
-    $('.userSuccMSG').css('display', 'block');
-    $('.userSuccMSG').css("top", 62 + "px");
-    $('.userSuccMSG').css("left", (($(window).width() / 2 - $('.userSuccMSG').width() / 2) - 38) + "px");
+    $('.message').html(msg);
+    $('.message').css('display', 'block');
+    $('.message').css("top", 62 + "px");
+    $('.message').css("left", (($(window).width() / 2 - $('.message').width() / 2) - 38) + "px");
     window.setInterval(function(){
-        $('.userSuccMSG').fadeOut(4445000);
+        $('.message').fadeOut(4445000);
     }, 5000);
 }

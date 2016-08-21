@@ -20,5 +20,6 @@ Route::group(['prefix' => 'admin'], function(){
     Route::get('user/add', array('as' => 'add-user', 'uses' => 'Accounts\AccountController@create'));
     Route::get('user/list', array('as' => 'list-users', 'uses' => 'Accounts\AccountController@index'));
     Route::get('user/get-users-list', array('as' => 'get-users-list', 'uses' => 'Accounts\AccountController@getUsersList'));
+    Route::get('user/{id?}/edit', array('as' => 'edit-user', 'uses' => 'Accounts\AccountController@edit'));
     Route::post('user/save', 'Accounts\AccountController@saveUser');
 });

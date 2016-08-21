@@ -3,7 +3,7 @@
     <div class="form-group">
         <label class="col-sm-3 control-label no-padding-right" for="name"> Name </label>
         <div class="col-sm-9">
-            <input type="text" id="name" name="name" placeholder="Student name" class="col-xs-10 col-sm-5" bash />
+            {!! Form::text('name', null, ['class' => 'col-xs-10 col-sm-5', 'placeholder' => 'Student name', 'id' => 'name', 'size' => 10,'required' => 'required']) !!}
         </div>
     </div>
 
@@ -12,7 +12,7 @@
     <div class="form-group">
         <label class="col-sm-3 control-label no-padding-right" for="userName"> User name </label>
         <div class="col-sm-9">
-            <input type="text" id="user_name" name="user_name" placeholder="User name" class="col-xs-10 col-sm-5" bash />
+            {!! Form::text('user_name', null, ['class' => 'col-xs-10 col-sm-5', 'placeholder' => 'User name', 'id' => 'user_name', 'size' => 10,'required' => 'required']) !!}
         </div>
     </div>
 
@@ -21,7 +21,7 @@
     <div class="form-group">
         <label class="col-sm-3 control-label no-padding-right" for="Email"> Email </label>
         <div class="col-sm-9">
-            <input type="text" id="email" name="email" placeholder="Email" class="col-xs-10 col-sm-5" bash />
+            {!! Form::text('email', null, ['class' => 'col-xs-10 col-sm-5', 'placeholder' => 'Email', 'id' => 'email', 'size' => 10,'required' => 'required']) !!}
         </div>
     </div>
 
@@ -30,7 +30,7 @@
     <div class="form-group">
         <label class="col-sm-3 control-label no-padding-right" for="Password"> Password </label>
         <div class="col-sm-9">
-            <input type="password" id="password" name="password" placeholder="Password" class="col-xs-10 col-sm-5" bash />
+            {!! Form::password('password', null, ['class' => 'col-xs-10 col-sm-5', 'placeholder' => 'Password', 'id' => 'password', 'size' => 10,'required' => 'required']) !!}
         </div>
     </div>
 
@@ -39,7 +39,7 @@
     <div class="form-group">
         <label class="col-sm-3 control-label no-padding-right" for="ReTypePassword"> Re-type password </label>
         <div class="col-sm-9">
-            <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Re-type password" class="col-xs-10 col-sm-5" bash />
+            {!! Form::password('password_confirmation', null, ['class' => 'col-xs-10 col-sm-5', 'placeholder' => 'Re-type password', 'id' => 'password_confirmation', 'size' => 10,'required' => 'required']) !!}
         </div>
     </div>
 
@@ -48,6 +48,7 @@
     <div class="form-group">
         <label class="col-sm-3 control-label no-padding-right" for="fatherName"> S/O </label>
         <div class="col-sm-9">
+            {!! Form::text('father_name', null, ['class' => 'col-xs-10 col-sm-5', 'placeholder' => 'Father name', 'id' => 'father_name', 'size' => 10,'required' => 'required']) !!}
             <input type="text" id="father_name" name="father_name" placeholder="Father name" class="col-xs-10 col-sm-5" bash />
         </div>
     </div>
@@ -84,6 +85,7 @@
         <label class="col-sm-3 control-label no-padding-right" for="Admission date"> Admission date </label>
         <div class="col-sm-9">
             <div class="input-group">
+                {!! Form::text('admission_date', null, ['class' => 'form-control date-picker col-xs-10 col-sm-5', 'placeholder' => 'Admission date', 'id' => 'admission_date', 'size' => 10,'required' => 'required']) !!}
                 <input class="form-control date-picker col-xs-10 col-sm-5" id="admission_date" name="admission_date" placeholder="Admission date" type="text" data-date-format="dd-mm-yyyy" readonly = true />
 <!--					<span class="input-group-addon">-->
 <!--						<i class="fa fa-calendar bigger-110"></i>-->
