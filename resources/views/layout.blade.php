@@ -239,7 +239,7 @@
     </div>
 </div>
 
-    <div class="userSuccMSG"></div>
+    <div class="message"></div>
 
 <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
     <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>

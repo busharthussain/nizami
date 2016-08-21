@@ -49,7 +49,7 @@
                     <i class="ace-icon fa fa-search-plus bigger-130"></i>
                 </a>
 
-                <a class="green" href="#">
+                <a href="{{ URL::to('admin/user/'.$row->id.'/edit/' ) }}" class="tooltip-success" data-rel="tooltip" title="Editttt">
                     <i class="ace-icon fa fa-pencil bigger-130"></i>
                 </a>
 
@@ -74,7 +74,7 @@
                         </li>
 
                         <li>
-                            <a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
+                            <a href="{{ URL::to('admin/user/'.$row->id.'/edit/' ) }}" class="tooltip-success" data-rel="tooltip" title="Editttt">
                                  <span class="green">
                                      <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
                                  </span>

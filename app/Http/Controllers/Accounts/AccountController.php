@@ -69,7 +69,9 @@ class AccountController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = User::find($id);
+
+        return view('accounts.create', compact('data'));
     }
 
     /**
